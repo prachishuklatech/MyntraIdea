@@ -1,0 +1,32 @@
+.box{
+    display: flex;
+}
+
+.section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 50%;
+    border: solid #2222;
+    background-image: linear-gradient(to right, lightblue, rgba(243, 175, 234, 0.603));
+}
+
+.section form{
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.section img{
+    width: 100%;
+    height: auto;
+}
+
+.bg{
+    position: absolute;
+    width: 50vw;
+    height: auto;
+}

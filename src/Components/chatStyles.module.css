@@ -1,0 +1,51 @@
+.chat{
+    position: relative;
+    display: flex;
+    padding: .25rem;
+    padding-left: 1rem;
+    border-bottom: skyblue solid;
+    transition: all 250ms;
+}
+
+.heading{
+    position: relative;
+    color: skyblue;
+    padding: 1rem;
+    margin: 0;
+    font-size: 3rem;
+    /* filter: drop-shadow(black 1px 1px) drop-shadow(-1px -1px); */
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #2228;
+    background-image: linear-gradient(to right, #EEE, skyblue);
+}
+
+.content{
+    padding-left: 1rem;
+}
+
+.chat:hover{
+    z-index: 1;
+    box-shadow: #2222 0 5px 5px;
+}
+.chat:hover .msg{
+    padding-left: 2rem;
+}
+
+.title{
+    text-transform: capitalize;
+    margin: .25rem;
+}
+
+.msg{
+    padding: 0;
+    margin: 0;
+    padding-left: 1rem;
+    transition: all 250ms;
+}
+
+.profileImg{
+    width: 50px;
+    height: 50px;
+    clip-path: circle();
+    background-color: white;
+}
