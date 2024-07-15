@@ -5,16 +5,12 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ChatList } from './Components/chats.tsx'
 import { VirtualDress } from './Components/virtualDress.tsx'
-import Chat from './Components/chat.tsx'
+
 
 const router = createBrowserRouter([
   {
     path: '/users',
     element: <ChatList />
-  },
-  {
-    path: '/chat',
-    element: <Chat />
   },
   {
     path: 'virtualDress',

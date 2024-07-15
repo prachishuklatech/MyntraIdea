@@ -34,7 +34,8 @@ app.use("/api/uploadImage", upload.single('file'), (req, res)=>{
     console.log(req.file)
 
     const file = readFileSync(targetPath, 'base64')
-    generateImage(file, res)
+    console.log(req.body.dressType)
+    generateImage(file, res, req.body.dressType)
     // generateFromtext(res)
     // console.log(file)
     // res.end()

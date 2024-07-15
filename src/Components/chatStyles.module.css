@@ -49,3 +49,96 @@
     clip-path: circle();
     background-color: white;
 }
+
+.popup{
+    z-index: 5;
+    top: 2rem;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.window{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    padding-inline: 25vw;
+    padding-block: 40vh;
+    border-radius: 1rem;
+    background-color: skyblue;
+}
+
+.window input{
+    position: absolute;
+    bottom: 1rem;
+    padding: 0.2rem;
+    width: 60%;
+    left: 20%;
+}
+.chatslist{
+    display: flex;
+    flex-flow: column nowrap;
+    /* align-items: end; */
+    padding-top: auto;
+    flex-direction: column;
+    position: absolute;
+    background-color: #2222;
+    width: 60%;
+    height: 25rem;
+    top: 20%;
+    left: 20%;
+    padding: 0.25rem;
+
+    overflow-y: auto;
+    border-radius: 1rem;
+}
+.chatslist::-webkit-scrollbar{
+    opacity: 0;
+    /* background-color: red; */
+}
+
+.chatslist > :first-child{
+    margin-top: auto !important;
+}
+
+.close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: white;
+    border: solid white;
+    background-color: red;
+}
+
+.chatbubble{
+    background-color: white;
+    width: min-content;
+    min-width: 3rem;
+    padding: 1rem;
+    border-radius: 1em;
+    margin: 4px;
+    border: solid palevioletred;
+    text-wrap: nowrap;
+}
+
+.right{
+    margin-left: auto;
+    border: solid pink;
+}
+
+.name{
+    position: absolute;
+    top: 0;
+    left: 35%;
+    background-image: none;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
